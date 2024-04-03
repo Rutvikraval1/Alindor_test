@@ -1,3 +1,5 @@
+
+import 'package:alindor_test/utils/app_style.dart';
 import 'package:alindor_test/utils/custColors.dart';
 import 'package:flutter/material.dart';
 
@@ -5,13 +7,15 @@ import 'package:flutter/material.dart';
 ///Requires [value] to set progress
 ///Optional [gradient] or [color] for bar infill
 class ProgressPainter extends CustomPainter {
-  const ProgressPainter({required this.value, this.gradient, this.color});
+  const ProgressPainter({required this.value,this.showtext, this.gradient, this.color});
 
   ///current progress bar value
   final double value;
 
   ///progress bar gradient infill
   final Gradient? gradient;
+
+  final double? showtext;
 
   ///progress bar gradient color
   final Color? color;
@@ -25,6 +29,8 @@ class ProgressPainter extends CustomPainter {
     if (color != null) {
       paint.color = color!;
     }
+
+
     final Paint innerCirclePaint = Paint()
       ..strokeWidth =  size.width
       ..style = PaintingStyle.fill
@@ -37,11 +43,16 @@ class ProgressPainter extends CustomPainter {
     canvas.drawRRect(
         RRect.fromRectAndRadius(
             Rect.fromLTRB(0, 0, size.width * value, size.height),
-            Radius.circular(size.height / 2) ),
+            Radius.circular(size.height / 4) ),
         paint);
-    canvas.drawCircle(size.center(Offset.zero), 7, innerCirclePaint);
+    Offset center = Offset(size.width * value/1, size.height/ 2);
+    canvas.drawCircle(
+       center, 7.5, innerCirclePaint);
 
-
+    TextSpan span =  TextSpan(style: App_style().textWhite_s12_IR, text: showtext?.round().toString());
+    TextPainter tp = TextPainter(text: span, textAlign: TextAlign.left, textDirection: TextDirection.ltr);
+    tp.layout();
+    tp.paint(canvas, Offset(size.width * value/2.3, 0));
   }
 
   @override

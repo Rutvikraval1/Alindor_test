@@ -5,12 +5,14 @@ import 'package:flutter/material.dart';
 class cus_container extends StatelessWidget {
  final Widget child;
  final double? height;
-  const cus_container({super.key,required this.child,this.height});
+ final double? width;
+  const cus_container({super.key,required this.child,this.height,this.width});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: height,
+      width: width,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
             colors: [

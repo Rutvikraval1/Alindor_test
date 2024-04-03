@@ -34,7 +34,6 @@ class ProgressBar extends StatelessWidget {
 
   ///progress bar gradient parameter
   final Gradient? gradient;
-
   ///progress bar color parameter
   final Color? color;
 
@@ -49,6 +48,7 @@ class ProgressBar extends StatelessWidget {
         value: value!,
         color: color,
         gradient: gradient,
+        showtext: value! * 100
       ),
       painter: BackgroundPainter(
         backgroundColor: backgroundColor,

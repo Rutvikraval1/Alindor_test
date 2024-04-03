@@ -14,7 +14,13 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_svg: ^2.0.10+1
   shared_preferences: ^2.2.2
-#  simple_progress_indicators: ^0.2.0
+  firebase_core: ^2.6.1
+  firebase_auth: ^4.2.8
+  cloud_firestore: ^4.4.2
+  google_sign_in: ^6.2.1
+  speech_to_text: ^6.4.1
+  animated_text_kit: ^4.2.2
+  avatar_glow: ^3.0.1
 
 dev_dependencies:
   flutter_test:

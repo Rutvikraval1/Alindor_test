@@ -11,4 +11,5 @@ class AppColors{
    static const primary_ligthblueColor =Color(0xff4CA7E8);
    static const darkgrey =Color(0xff828282);
    static const lightgrey =Color(0xffD9D9D9);
+   static const lighblue5 =Color(0xff7EE8F6);
 }

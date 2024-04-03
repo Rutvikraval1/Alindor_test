@@ -12,6 +12,11 @@ class Preferences {
 
   static const String USER_ID = "USER_ID";
   static const String USER_ACTIVE = "USER_ACTIVE";
+  static const String user_name = "user_name";
+  static const String user_email = "user_email";
+  static const String user_phoneNumber = "user_phoneNumber";
+  static const String user_photoURL = "user_photoURL";
+
 
   static addDataToSF(String key, var value) async {
     prefs = await SharedPreferences.getInstance();
@@ -68,6 +73,10 @@ class Preferences {
   static clearAllValuesSF() async {
     final pref = await SharedPreferences.getInstance();
     await pref.remove(USER_ID);
+    await pref.remove(user_name);
+    await pref.remove(user_email);
+    await pref.remove(user_phoneNumber);
+    await pref.remove(user_photoURL);
     await pref.remove(USER_ACTIVE);
   }
 
