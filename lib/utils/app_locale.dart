@@ -4,10 +4,14 @@ class AppImages {
   //PNG icon
   static const String Loading_icon = "assets/images/png/Loading.png";
   static const String google_icon= "assets/images/png/google_image.png";
+  static const String Save_icon = "assets/images/png/Save.png";
+  static const String voice_data = "assets/images/png/voice_data.png";
+  static const String Play_icon = "assets/images/png/Play.png";
+  static const String result_icon = "assets/images/png/result_icon.png";
+  static const String analytics_icon = "assets/images/png/analytics.png";
 
   //  SVG icon
-  static const String Language_icon = "assets/images/svg/analytics.svg";
-  static const String Save_icon = "assets/images/svg/Save.svg";
+
   static const String Setting_icon = "assets/images/svg/setting.svg";
   static const String Voice_icon = "assets/images/svg/voiceIcon.svg";
 }

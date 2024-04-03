@@ -12,7 +12,8 @@ class cus_container extends StatelessWidget {
     return Container(
       height: height,
       decoration: BoxDecoration(
-        gradient: const LinearGradient(colors: [
+        gradient: const LinearGradient(
+            colors: [
           AppColors.primary_blueColor,
           AppColors.primary_ligthblueColor,
         ]),

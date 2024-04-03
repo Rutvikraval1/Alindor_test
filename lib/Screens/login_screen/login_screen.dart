@@ -28,7 +28,11 @@ class _login_screenState extends State<login_screen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              google_card(context)
+              GestureDetector(
+                onTap: (){
+                  Navigator.push(context,MaterialPageRoute(builder: (context) => const IndRecord_screen(),));
+                },
+                child: google_card(context))
             ],
           ),
         ),
@@ -38,20 +42,15 @@ class _login_screenState extends State<login_screen> {
 
   Widget google_card(context){
     return cus_container(
-      child: GestureDetector(
-        onTap: (){
-          Navigator.push(context,MaterialPageRoute(builder: (context) => const IndRecord_screen(),));
-        },
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 8),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Asset_imge_show().Img_asset(AppImages.google_icon,height: 30),
-              const SizedBox(width: 20,),
-              Text('Google auth',style: App_style().textWhite_IR,)
-            ],
-          ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Asset_imge_show().Img_asset(AppImages.google_icon,height: 30),
+            const SizedBox(width: 20,),
+            Text('Google auth',style: App_style().textWhite_IR,)
+          ],
         ),
       ),
     );
