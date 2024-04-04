@@ -1,6 +1,6 @@
 # alindor_test
 
-A new Flutter project.
+ [Download Demo APK](/assets/project_demo/demo.apk)
 
 ## Overview
 This repository contains the code for a Flutter mobile application prototype developed as part of a test assignment. The assignment required the completion of two pages of a design provided in Figma, involving Google sign-in via Firebase on the first page and an "IndRecord" page on the second 
