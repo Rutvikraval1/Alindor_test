@@ -16,9 +16,9 @@ The project aims to demonstrate proficiency in front-end development, integratio
 
 <img src="/assets/project_demo/inrecord2.jpg" width="200"/>
 
-| Full Demo Video  |
-| ------------- |
-|<img src="/assets/project_demo/demoVideo.mp4" width="200"/>|
+| Full Demo Video                                       |
+|-------------------------------------------------------|
+| [Full Demo Video](/assets/project_demo/demoVideo.mp4) |
 
 
 
