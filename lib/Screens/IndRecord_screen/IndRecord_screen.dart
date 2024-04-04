@@ -489,6 +489,7 @@ class _IndRecord_screenState extends State<IndRecord_screen> {
 
   void _onResultListening(SpeechRecognitionResult result) async {
     chatController.text = result.recognizedWords;
+    print(result);
     print("chatController.text ");
     print(chatController.text );
     if (speechToText.isNotListening) {

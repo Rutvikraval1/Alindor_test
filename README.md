@@ -28,8 +28,6 @@ IndRecord Page: Provides functionality for audio recording.
 
 ## Repository Structure
 
-
-
 root
 │   README.md
 │   ...

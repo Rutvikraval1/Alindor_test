@@ -24,20 +24,4 @@ class DefaultFirebaseOptions {
     projectId: 'my-portfolio-a2c8a',
     storageBucket: 'my-portfolio-a2c8a.appspot.com',
   );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
