@@ -8,6 +8,22 @@ This repository contains the code for a Flutter mobile application prototype dev
 The project aims to demonstrate proficiency in front-end development, integration with Firebase authentication, audio recording functionality, 
 (I have not found the open source of OpenAI)
 
+## Screenshots
+
+| Login       | Inrecord           |
+| ------------- |:-------------:|
+|<img src="/assets/project_demo/login_screen.jpg" width="200"/>| <img src="/assets/project_demo/inrecord.jpg" width="200"/> |
+
+<img src="/assets/project_demo/inrecord2.jpg" width="200"/>
+
+| Full Demo Video  |
+| ------------- |
+|<img src="/assets/project_demo/demoVideo.mp4" width="200"/>|
+
+
+
+
+
 # Challenges Faced
 
 ## Integration with Firebase
